@@ -1,0 +1,1 @@
+print('akbar is tha best')

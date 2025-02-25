@@ -2,6 +2,7 @@ xyz = []
 for i in range(5):
     xyz.append(i)
 print("first  xyz {}".format(xyz))
+<<<<<<< HEAD
 
 
 
@@ -15,3 +16,7 @@ print("second xyz {}".format(xyz))
 xyz = (i for i in range(5))
 for i in xyz:
     print(i)
+=======
+xyz = [i for i in range(5)]
+print("second xyz {}".format(xyz))
+>>>>>>> 05198f76b3d6a8840aa0ffb6290936990166705f

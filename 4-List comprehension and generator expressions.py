@@ -20,4 +20,3 @@ for i in xyz:
 xyz = [i for i in range(5)]
 print("second xyz {}".format(xyz))
 # test
->>>>>>> 05198f76b3d6a8840aa0ffb6290936990166705f

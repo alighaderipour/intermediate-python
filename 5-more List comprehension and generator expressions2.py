@@ -53,3 +53,11 @@ for i in xyz:
    for ii in i:
     print(ii)
 # but if we use list comprehension we may run out of memory
+
+
+"""
+List Comprehension : Best for small to medium-sized datasets where you need all elements in memory.
+Generator Expression : Best for large datasets or when memory efficiency is critical.
+Nested Structures : Both list comprehensions and generator expressions can be nested to handle multi-dimensional data.
+Practical Use Case : Use generators when working with large datasets or infinite streams to avoid memory exhaustion.
+"""

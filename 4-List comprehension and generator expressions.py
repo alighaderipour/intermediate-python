@@ -7,7 +7,7 @@ print("first  xyz {}".format(xyz))
 
 
 
-# list comprehension => stores in memory and faster
+# list comprehension => list stores in memory and faster
 xyz = [i for i in range(5)]
 print("second xyz {}".format(xyz))
 

@@ -1,8 +1,10 @@
 import os
+os.system('cls' if os.name == 'nt' else 'clear')
 
-files = ["document.txt", "image.png", "report.pdf"]
-
-for i, file in enumerate(files, start=1):
-    new_name = f"file_{i}_{file}"
-    print(f"Renaming {file} to {new_name}")
-    # os.rename(file, new_name)  # Uncomment this when working with real files
+class Person:
+    def __init__(self, fname, lname):
+        self.fname = fname
+        self.lname = lname
+    
+    @property
+    def 

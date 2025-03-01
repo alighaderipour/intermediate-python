@@ -20,3 +20,10 @@ print(my_dict)
 
 
 [print(i,j) for i, j in my_dict.items()]
+#--------------------- another example
+
+import random
+ml = [random.randint(1,100) for i in range(100)]
+enum1 = ([i , j] for i , j in enumerate(ml) if i%2 ==0 )
+for i in enum1:
+    print(i)

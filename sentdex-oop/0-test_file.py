@@ -1,16 +1,16 @@
 import os
 os.system('cls' if os.name == 'nt' else 'clear')
 
-
-def my_decorator(func):
-    def wrapper():
-        print('something before {}'.format(func.__name__))
-        func()
-        print('something after {}'.format(func.__name__))
+def log_function_call(func):
+    def wrapper(*args, **kwargs):
+        print(f"Calling function {func.__name__} with arguments {args} {kwargs}")
+        result = func(*args, **kwargs)
+        print(f"Function {func.__name__} returned {result}")
+        return result
     return wrapper
 
-@my_decorator
-def sum_nums(*args):
-    return sum(args)
+@log_function_call
+def add(a, b):
+    return a + b
 
-print(sum_nums(1,2,3,4,5,6))
+print(add(2, 3, 4))
